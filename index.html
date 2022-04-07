@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="select2.min.js"></script>
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="town.js"></script>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="stylesheet" type="text/css" href="select2.min.css">
+	<style type="text/css">
+		
+		
+	</style>
+	
+
+
+</head>
+<body>
+	<header>
+		<div>
+			<div class="app_header" id="app_header">
+				<div id="home_btn" style="width: 11%;height: auto;float:left;">
+					<img src="img/home1.png" style="margin-top:px;width: 30px;height:30px;">
+					
+				</div>
+			
+				<div id="select_city1_box" style="width: 35%;height: auto;float:left;">
+					<!-- <select></select> -->
+				</div>
+				<div id="select_city2_box" style="width: 35%;height: auto;float:left;">
+					<!-- <select></select> -->
+				</div>
+				<div id="search_btn" style="width: 18%;height: auto;float:left;">
+					<img src="img/search.png" style="margin-top:px;width: 30px;height:30px;"onclick="myFunction()">
+				</div>
+				
+		
+		</div>
+
+		
+
+	</header>
+	<nav>
+		<div class="app_nav" id="app_nav" style="display: none">
+			<div>about</div>
+			<div>contact us</div>
+			<div>version</div>
+			<div>exist</div>
+		</div>
+		
+
+		
+	</nav>
+	<article>
+		<div class="all_detail" id="all_detail">
+			
+		</div>
+		<div id="result" ></div>
+		<div class="app_body" id="app_body" style="display: none;">
+
+			<div id="name"></div>
+			<div id="detail"></div>
+			<div id="phone"></div>
+		</div>
+		
+	</article>
+	
+	<footer>
+		
+	</footer>
+	<script type="text/javascript" src="function.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("select").select2();
+		});
+	</script>
+
+</body>
+</html>
